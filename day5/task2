@@ -1,0 +1,16 @@
+// 1. Create an object representing a student
+const student = {
+  name: "Alice",
+  age: 21,
+  // 2. Add method inside object
+  displayInfo: function() {
+    return `Name: ${this.name}, Age: ${this.age}`;
+  }
+};
+
+console.log(student.displayInfo()); // invoking the method
+
+// 3. Access and modify object properties
+student.age = 22;
+student.course = "Web Development"; // adding new property
+console.log("Updated Student:", student);
