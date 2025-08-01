@@ -1,0 +1,18 @@
+// Object destructuring
+const person = {
+  firstName: "John",
+  lastName: "Doe",
+  age: 30
+};
+
+const { firstName, age } = person;
+console.log("Destructured values:", firstName, age);
+
+// Using spread with objects
+const contactInfo = {
+  email: "john@example.com",
+  phone: "123-456-7890"
+};
+
+const fullProfile = { ...person, ...contactInfo };
+console.log("Merged Object with Spread:", fullProfile);
