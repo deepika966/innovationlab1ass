@@ -1,0 +1,25 @@
+// Sample array
+const numbers = [5, 12, 8, 20, 3, 25];
+
+// 1. Use filter() to get numbers > 10
+const filtered = numbers.filter(num => num > 10);
+console.log("Filtered (>10):", filtered);
+
+// 2. Use reduce() to calculate the sum
+const sum = numbers.reduce((acc, curr) => acc + curr, 0);
+console.log("Sum using reduce():", sum);
+
+// 3. Use slice() to extract a portion
+const sliced = numbers.slice(1, 4); // index 1 to 3
+console.log("Sliced portion:", sliced);
+
+// 4. Use splice() to remove and add elements
+const modified = [...numbers]; // clone first
+modified.splice(2, 1, 99); // remove 1 item at index 2 and add 99
+console.log("After splice():", modified);
+
+// 5. Use spread operator to clone and merge
+const cloned = [...numbers];
+const merged = [...numbers, ...[100, 200]];
+console.log("Cloned array:", cloned);
+console.log("Merged array:", merged);
